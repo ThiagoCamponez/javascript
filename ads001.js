@@ -15,3 +15,22 @@ function cumprimentar(){
                 document.write("Boa noite!!");
             }
     }
+
+function diaSemana(){
+    var d = new Date();
+    var dia = d.getDay();
+    switch (dia)
+    {
+        case 5:
+            document.write(" Finalmente, sexta-feira!");
+            break;
+        case 6:
+            document.write(" Super sábado!");
+            break;
+        case 0:
+            document.write(" Domingo, vamos descansar!");
+            break;
+        default:
+            document.write(" Cadê o final de semana?");
+    }
+}

@@ -9,11 +9,48 @@
 <body>
     <h1>Desenvolvimento Front-End, Aula1, 21/10/2023</h1>
     <hr>
+    <form name="testeTabuada" id="testeTabuada">
+        <label for="n1">1º Número:</label><br>
+        <input type="number" id="n1"><br>
+
+        <label for="n2">2º Número:</label><br>
+        <input type="number" id="n2"><br>
+
+        <label for="resultado">Resultado:</label><br>
+
+        <input type="number" id="resultado"><br>
+
+        <input type="button" id="calcular" value="Calcular" onclick="multiplicar(n1.value, n2.value)"/>
+    </form>
+
+
+
+
         <script>
             document.write('<h2>Testando escrever na página web - HTML</h2>');
             /*var nome = prompt("Entre com seu nome: ", "Digite-o aqui... ");
             document.write("Olá " + nome + ", seja bem vindo!")*/
             cumprimentar();
+            diaSemana();
+
+            //Parâmetros do for (inicialização, condição de parada e atualização +/-)
+            //for(let cont=1;  cont<=10; cont+=2) --> Exemplo para contar de 2 em 2
+            //for(let cont=10;  cont<=1; cont--) --> Exemplo para contar do 10 ao 1
+            for(let cont=1;  cont<=10; cont++){
+            document.write('<h2>Linha: ' + cont + '</h2>')
+            //Poderia ser var também, mas aí a variável ia continuar existindo até o final do código..
+}
+        </script>
+        <hr>
+        <script>
+            var nro = 0;
+            while (nro < 51)
+            {
+                document.write(nro + ', ');
+                nro++;
+            }
+
+
         </script>
     </hr>
 </body>
