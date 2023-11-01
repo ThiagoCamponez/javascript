@@ -34,3 +34,12 @@ function diaSemana(){
             document.write(" Cadê o final de semana?");
     }
 }
+
+function calcular(v1, v2){
+    return v1 * v2;
+}
+
+function multiplicar(a, b){
+    document.write(a + "+" + b + "=" + calcular(parseInt(a), parseInt(b))
+    )
+}
