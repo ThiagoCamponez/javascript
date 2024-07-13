@@ -1,9 +1,12 @@
 /* Crie um programa que verifica se a pessoa é brasileira ou não*/  
 
-nacionalidade = 'Argentina';
+const person = {
+    name: 'Thiago',
+    nationality: 'Paraguaio'
+}
 
-if (nacionalidade === 'Brasileira') {
-    console.log('Pessoa brasileira');
+if (person.nationality === 'Brasileiro') {
+    console.log(`${person.name} é brasileiro!`);
 } else {
-    console.log('Pessoa estrangeira');
+    console.log(`${person.name} é estrangeiro!`);
 }
