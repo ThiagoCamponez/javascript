@@ -1,3 +1,5 @@
+/* Faça um programa que tenha um objeto pessoa com as propriedades nome, idade, sexo, profissão e nacionalidade. Crie 3 objetos pessoa e um algorítimo que imprima processo aprovado se a pessoa for Brasileira e maior de idade, e imprima não aprovado se for estrangeira ou menor de idade*/
+
 class Pessoa {
     constructor(nome, idade, sexo, profissao, nacionalidade) {
         this.nome = nome;
