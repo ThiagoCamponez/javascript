@@ -1,4 +1,5 @@
-
+/*Escreva um programa que chama uma função enviando um número, a função imprime a tabuada do número informado.
+Sendo permitido somente números de 0 a 10*/
 const tabuada = (number) => {
     
     if(number > 0 && number <= 10){
