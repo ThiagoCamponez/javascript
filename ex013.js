@@ -36,8 +36,20 @@ function mediaFilhos(cidadaos){
     for(let i = 0; i < totPop; i++){
         media += cidadaos[i].nFilhos;
     }
-    return media / totPop
+    let resultado = Math.floor(media / totPop)
+    return resultado
 }
 
-console.log(`A média salarial da população é R$${mediaSalario(cidadaos)},00
-A média de filhos é ${mediaFilhos(cidadaos)}`);
+function maiorSalario(cidadaos){
+    let maior = 0
+    let totPop = cidadaos.length
+    for (let i = 0; i < totPop; i++){
+        if(cidadaos[i].salario > maior){
+            maior = cidadaos[i].salario
+        }
+    }
+    return maior
+}
+console.log(`A média salarial da população é R$${mediaSalario(cidadaos)},00.
+A média de filhos é ${mediaFilhos(cidadaos)} por pessoa.
+O maior salário é R$${maiorSalario(cidadaos)},00.`);
