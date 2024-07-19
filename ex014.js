@@ -1,6 +1,6 @@
 let valorInicial = 50000;
-let valorAtual = 50300;
-let tempoMeses = 1;
+let valorAtual = 58000;
+let tempoMeses = 12;
 
 function calcTaxaJuros(valorInicial, valorAtual, tempoMeses) {
     let juros = valorAtual - valorInicial;
