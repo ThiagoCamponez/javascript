@@ -28,13 +28,17 @@ const students = [
 //     return number
 // })
 
-const newStudents = students.map((students) => {
-    const newStudents = {
-        name: students.name + ' Camponêz',
-        age: students.age + 100
-    }
+// const newStudents = students.map((students) => {
+//     const newStudents = {
+//         name: students.name + ' Camponêz',
+//         age: students.age + 100
+//     }
 
-    return newStudents
-})
+//     return newStudents
+// })
+// console.log(newStudents)
 
-console.log(newStudents)
+const double = number => number * 2;
+const toReais = number => `R$${number.toFixed(2)}`;
+const newArray = numbers.map(double).map(toReais);
+console.log(newArray)
