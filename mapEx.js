@@ -1,3 +1,8 @@
+/*
+O método .map() em JavaScript é usado para criar um novo array ao aplicar uma função a cada elemento de um array existente. Ele itera sobre cada elemento do array original, aplica a função fornecida a cada elemento e retorna um novo array com os resultados.
+
+*/
+
 const productsAndPrices = [
     { name: 'Iphone', price: 1000 },
     { name: 'Notebook', price: 2000 },
