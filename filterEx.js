@@ -10,8 +10,13 @@ const companies = [
 ]
 
 // Novo array contendo apenas números pares e divisiveis por 5
-const newList = list.filter( numbers => numbers % 2 === 0 && numbers % 5 === 0);
+const newList = list.filter( numbers => {
+    if(numbers % 2 === 0 && numbers % 5 === 0) return true
+});
 console.log(newList)
 
-const newCompanies = companies.filter( company => company.foundedOn >= 1975 && company.marketValue > 2);
+const newCompanies = companies.filter( company => {
+    if(company.foundedOn >= 1975 && company.marketValue > 200) return true
+    else return false
+});
 console.log(newCompanies)
